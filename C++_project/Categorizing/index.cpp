@@ -19,7 +19,6 @@ void selectionSort(vector<int> &arr)
     }
 }
 
-// Function to merge two halves in Merge Sort
 void merge(vector<int> &arr, int left, int mid, int right)
 {
     vector<int> leftVec(arr.begin() + left, arr.begin() + mid + 1);
@@ -40,7 +39,7 @@ void merge(vector<int> &arr, int left, int mid, int right)
         arr[k++] = rightVec[j++];
 }
 
-// Merge Sort function
+//*****************Merge Sort function**************
 void mergeSort(vector<int> &arr, int left, int right)
 {
     if (left < right)
@@ -52,7 +51,7 @@ void mergeSort(vector<int> &arr, int left, int right)
     }
 }
 
-// Linear Search
+// **********Linear Search**********
 int linearSearch(const vector<int> &arr, int target)
 {
     for (int i = 0; i < arr.size(); i++)
@@ -63,7 +62,7 @@ int linearSearch(const vector<int> &arr, int target)
     return -1;
 }
 
-// Binary Search (requires sorted array)
+// ********Binary Search*********
 int binarySearch(const vector<int> &arr, int target)
 {
     int low = 0, high = arr.size() - 1;
